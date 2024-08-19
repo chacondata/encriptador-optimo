@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./Assets/Logo.svg" alt="Logo de Alura" >
+        <h1 class="titulo"> Encriptador de Texto</h1>
+    </header>
+    
+    <main>        
+        <div class="izquierda">
+            <textarea id="textoaEncriptar"    class="textoaEncriptar" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>    
+            <div class="instrucciones" >
+            <p ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2"  />
+            </svg>    Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="losBotones">
+                <button id="botonEncriptar" class="botonEncriptar" type="button" >Encriptar</button>
+                <button id="botonDesencriptar" class="botonDesencriptar" type="button" >Desencriptar</button>
+            </div>
+        </div>
+        <div class="derecha">
+            <div class="elRecuadro">           
+                <img id="muñeco" class="muñeco" src="./Assets/Muñeco.svg" alt="Un muñeco investigando">            
+                <p id="infoDerecha"  class="infoDerecha">Ingresa el texto que desees encriptar o desencriptar</p>
+                <textarea id="advertencia"  class="advertencia" cols="30" rows="10" placeholder="Ningun mensaje fue encontrado." readonly ></textarea>
+            </div>
+            <div >
+            <button id="botonDecopiar" class="botonDecopiar" type="button" >Copiar</button>
+            </div>
+        </div>
+                                
+    </main>
+    <footer>
+        <p>Realizado por Sonia Chacon para el programa ONE</p>
+    </footer>      
+</body>
+<script src="./script.js"></script>
+</html>
